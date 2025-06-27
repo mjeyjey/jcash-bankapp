@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Jcash Login</title>
+</head>
+<body>
+    <h2>Welcome to Jcash</h2>
+
+    <div th:if="${loginError}" style="color: red;">
+        <p th:text="${loginError}"></p>
+
+    </div>
+
+    <form th:action="@{/login}" method="post">
+        <label>Username:</label>
+            <input type="text" name="username" required></label><br>
+
+        <label>Password:</label>
+            <input type="password" name="password" required></label><br><br>
+
+        <button>Login</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cash In</title>
+</head>
+<body>
+    <div th:replace="~{fragments/navbar :: navbar}"></div>
+    <h2>Cash In</h2>
+    <form action="/cashin" method="post">
+        <label>Amount: <input type="number" name="amount" step="0.01" required></label>
+        <br><br>
+        <button type="submit">Confirm Cash In</button>
+    </form>
+</body>
+</html>

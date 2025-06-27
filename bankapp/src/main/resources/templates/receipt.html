@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Receipt</title>
+</head>
+<body>
+    <div th:replace="~{fragments/navbar :: navbar}"></div>
+    <h2>Transaction Receipt</h2>
+    <p th:text="${message}"></p>
+    <p>Current Balance: ₱<span th:text="${balance}"></span></p>
+    <br>
+    <a href="/dashboard">🔙 Back to Dashboard</a>
+</body>
+</html>
