@@ -40,7 +40,7 @@ public class LoginController {
             return "dashboard";
         }
             //
-              if ("akoadmin".equals(username) && "1234".equals(password)) {
+              if ("admin".equals(username) && "4321".equals(password)) {
             model.addAttribute("username", username);
             return "dashboard";
 
