@@ -38,6 +38,12 @@ public class LoginController {
         if ("akoadmin".equals(username) && "1234".equals(password)) {
             model.addAttribute("username", username);
             return "dashboard";
+        }
+            //
+              if ("akoadmin".equals(username) && "1234".equals(password)) {
+            model.addAttribute("username", username);
+            return "dashboard";
+
         } else {
             return "redirect:/?error"; //babalik sa login if wrong cridentials
         } 
